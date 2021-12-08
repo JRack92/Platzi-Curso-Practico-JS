@@ -59,9 +59,9 @@ function calcularPerimetroTriangulo() {
   const lado2 = document.getElementById("InputTrianguloLado2");
   const base = document.getElementById("InputTrianguloBase");
 
-  const lado1Value = lado1.value;
-  const lado2Value = lado2.value;
-  const baseValue = base.value;
+  const lado1Value = parseInt(lado1.value);
+  const lado2Value = parseInt(lado2.value);
+  const baseValue = parseInt(base.value);
 
   const perimetro = perimetroTriangulo(lado1Value, lado2Value, baseValue);
   alert(perimetro);
